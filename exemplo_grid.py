@@ -8,11 +8,11 @@ class Tela:
         self.janela = master
         self.janela.geometry('200x200')
         lbl1 = tk.Label(self.janela,text='BANDEIRA', fg='black', bg='#009E60')
-        lbl1.pack(side= tk.TOP, padx=20, fill= tk.BOTH, expand=True)
+        lbl1.grid(row=2, column=0)
         lbl2 = tk.Label(self.janela, text='DO', fg='black', bg='#FCD116')
-        lbl2.pack(side= tk.TOP, padx=20, fill= tk.BOTH, expand=True)
+        lbl2.grid(row=2, column=1)
         lbl3 = tk.Label(self.janela, text='GABÃO', fg='black', bg='#4664B2')
-        lbl3.pack(side= tk.TOP, padx=20, fill= tk.BOTH, expand=True)
+        lbl3.grid(row=2, column=2)
 
 janela = tk.Tk()
 app = Tela(janela)
